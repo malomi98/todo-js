@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini Projet Todo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo Complet</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Liste de tâches</h1>
-    <button id="ajouterBtn">Ajouter une tâche</button>
+    <h1>Ma liste de tâches</h1>
+    <div class="top-bar">
+      <button id="ajouterBtn">Ajouter une tâche</button>
+      <select id="filtre">
+        <option value="toutes">Toutes</option>
+        <option value="faites">Faites</option>
+        <option value="nonfaites">Non faites</option>
+      </select>
+      <button id="toggleDark">🌙/☀️</button>
+    </div>
     <ul id="listeTaches"></ul>
   </div>
 
   <!-- Popup -->
   <div class="popup" id="popup">
     <div class="popup-content">
-      <input type="text" id="tacheInput" placeholder="Entrez une tâche" />
+      <input type="text" id="tacheInput" placeholder="Nouvelle tâche..." />
       <button id="validerAjout">Ajouter</button>
     </div>
   </div>
